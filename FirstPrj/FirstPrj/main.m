@@ -29,6 +29,15 @@ int main(int argc, const char * argv[]) {
         vehicle2.wheels = 12;
         vehicle2.seats = 6;
         
+        if (vehicle.wheels == 4) {
+            NSLog(@"바퀴가 4개 입니다.");
+        } else {
+            NSLog(@"바퀴가 4개가 아닙니다.");
+        }
+        
+        for (int i = 0; i < vehicle.wheels; i++) {
+            NSLog(@"wheels : %i", i);
+        }
         
         NSLog(@"wheels : %i, seats : %i", [vehicle wheels], [vehicle seats]);
         NSLog(@"wheels : %i, seats : %i", vehicle2.wheels, vehicle2.seats);
