@@ -18,29 +18,33 @@
 }
 
 // member method
--(void)setWheels:(int)w;
--(void)setSeats:(int)s;
--(int)wheels;
--(int)seats;
+@property int wheels;
+@property int seats;
+//-(void)setWheels:(int)w;
+//-(void)setSeats:(int)s;
+//-(int)wheels;
+//-(int)seats;
 -(void)print;
 
 @end
 
 @implementation Vehicle
--(void)setWheels:(int)w {
-    wheels = w;
-}
--(void)setSeats:(int)s {
-    seats = s;
-}
-
--(int)wheels {
-    return seats;
-}
-
--(int)seats {
-    return wheels;
-}
+@synthesize wheels;
+@synthesize seats;
+//-(void)setWheels:(int)w {
+//    wheels = w;
+//}
+//-(void)setSeats:(int)s {
+//    seats = s;
+//}
+//
+//-(int)wheels {
+//    return seats;
+//}
+//
+//-(int)seats {
+//    return wheels;
+//}
 
 -(void)print {
     NSLog(@"wheels : %i, seats : %i", wheels, seats);
