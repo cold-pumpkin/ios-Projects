@@ -10,47 +10,8 @@
 // - : instance method
 
 #import <Foundation/Foundation.h>
+#import "Vehicle.h"
 
-@interface Vehicle : NSObject {
-    // member variable (선언 생략 가능)
-    int wheels;
-    int seats;
-}
-
-// member method
-@property int wheels;
-@property int seats;
-//-(void)setWheels:(int)w;
-//-(void)setSeats:(int)s;
-//-(int)wheels;
-//-(int)seats;
--(void)print;
-
-@end
-
-@implementation Vehicle
-@synthesize wheels;
-@synthesize seats;
-//-(void)setWheels:(int)w {
-//    wheels = w;
-//}
-//-(void)setSeats:(int)s {
-//    seats = s;
-//}
-//
-//-(int)wheels {
-//    return seats;
-//}
-//
-//-(int)seats {
-//    return wheels;
-//}
-
--(void)print {
-    NSLog(@"wheels : %i, seats : %i", wheels, seats);
-}
-
-@end
 
 
 int main(int argc, const char * argv[]) {
