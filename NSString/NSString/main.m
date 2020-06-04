@@ -34,6 +34,12 @@ int main(int argc, const char * argv[]) {
         result = [str substringWithRange:NSMakeRange(0, 2)].uppercaseString;  // 0번째부터 2개 -> 대문자
         NSLog(@"result: %@", result);
         
+        // Mutable String
+        NSMutableString *mstr = [NSMutableString stringWithString:str];
+        [mstr appendString:@" and NSMutableString"];
+        [mstr insertString:@"??" atIndex:9];
+        NSLog(@"result: %@", mstr);
+        
         
     }
     return 0;
